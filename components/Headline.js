@@ -6,8 +6,7 @@ export function Headline(props) {
     <div>
       <h1 className={styles.title}>{props.page} Page</h1>
       <p className={styles.description}>
-        Get started by editing&nbsp;
-        {props.children}
+        Get started by editing {props.children}
       </p>
     </div>
   );
