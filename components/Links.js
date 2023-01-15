@@ -30,7 +30,7 @@ export function Links() {
       >
         <h3 className={classes.title}>Deploy &rarr;</h3>
         <p className={classes.description}>
-          Instantly deploy your Next.js site to a shareable URL with Vercel.
+          Instantly deploy your Next.js site to a public URL with Vercel.
         </p>
       </a>
     </div>
