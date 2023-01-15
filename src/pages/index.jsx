@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useCallback, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Footer } from "src/components/Footer";
 import { Header } from "src/components/Header";
 import { Main } from "src/components/Main";
@@ -12,10 +12,17 @@ import styles from "../styles/Home.module.css";
 //   }, []);
 
 export default function Home() {
-  const foo = 1;
-  const handleClick = useCallback((e) => {
-    console.log(e.target.href);
-    e.preventDefault();
+  const [count, setCount] = useState(1);
+  const handleClick = (e) => {
+    setCount((count) => count + 1);
+    setCount((count) => count + 1);
+  };
+
+  useEffect(() => {
+    document.body.style.backgroundColor = "lightblue";
+    return () => {
+      document.body.style.backgroundColor = "";
+    };
   }, []);
 
   return (
@@ -24,9 +31,10 @@ export default function Home() {
         <title>Index Page</title>
       </Head>
       <Header />
-      {/* <a href="/about" onClick={handleClick}>
+      <h1>{count}</h1>
+      <button href="/about" onClick={handleClick}>
         ボタン
-      </a> */}
+      </button>
       <Main page="index" />
       <Footer />
     </div>
