@@ -6,7 +6,7 @@ import { Header } from "../components/Header";
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.container}>
       <Head>
         <title>About Page</title>
       </Head>
