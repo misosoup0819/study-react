@@ -1,10 +1,10 @@
-import styles from "../styles/Home.module.css";
+import classes from "./Footer.module.css";
 import Image from "next/image";
 
 export function Footer() {
   return (
     <>
-      <footer className={styles.footer}>
+      <footer className={classes.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
@@ -14,7 +14,7 @@ export function Footer() {
           <Image
             src="/vercel.svg"
             alt="Vercel Logo"
-            className={styles.vercelLogo}
+            className={classes.vercelLogo}
             width={100}
             height={24}
             priority
