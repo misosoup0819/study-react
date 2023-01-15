@@ -1,4 +1,4 @@
-import classes from "./Footer.module.css";
+import classes from "src/components/Footer/Footer.module.css";
 import Image from "next/image";
 
 export function Footer() {
@@ -10,7 +10,7 @@ export function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powerd By{" "}
+          Powered By{" "}
           <Image
             src="/vercel.svg"
             alt="Vercel Logo"
